@@ -78,3 +78,5 @@ You can explore and test all endpoints directly via the built-in Swagger UI:
 - By default, the application has a limit of 10 requests per minute, just for demonstration purposes, which can be changed in `settings.py`.
 - The API can be tested via Swagger UI without external tools.
 Error handling and input validation are implemented for key operations.
+- Secretkey are specified directly in the settings file for ease of application launch. In a real project, they would be moved to an environment variable.
+- The application is not packaged in Docker because there is nothing to package :). If a database such as PostgreSQL were used, the application would be packaged in Docker and divided into two services: web and db.
